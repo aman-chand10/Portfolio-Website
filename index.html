@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aman Chand — Software Engineer & Intern at Prodigy InfoTech</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['"Fira Code"', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    .card-hover {
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-3px);
+    }
+
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #090d16;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body class="bg-[#0b0f19] text-slate-200 font-sans antialiased selection:bg-indigo-500 selection:text-white custom-scrollbar">
+
+  <header class="fixed top-0 left-0 w-full z-50 bg-[#0b0f19]/90 backdrop-blur-md border-b border-slate-800/80">
+    <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+
+      <a href="#home" class="flex items-center gap-2.5 group">
+        <div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-bold text-sm tracking-wide shadow-md shadow-indigo-600/20 group-hover:bg-indigo-500 transition-colors">
+          AC
+        </div>
+        <span class="font-bold text-white text-base tracking-tight">Aman Chand</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-7 text-xs font-medium text-slate-300">
+        <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+        <a href="#skills" class="hover:text-indigo-400 transition-colors">Skills</a>
+        <a href="#projects" class="hover:text-indigo-400 transition-colors">Projects</a>
+        <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
+      </nav>
+      <div class="hidden md:flex items-center gap-3">
+        <a href="#contact" class="px-4 py-2 text-xs font-medium rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white transition-all shadow-sm">
+          Get in Touch
+        </a>
+      </div>
+      <button id="mobileBtn" class="md:hidden text-slate-400 hover:text-white p-2">
+        <i class="fa-solid fa-bars text-lg"></i>
+      </button>
+
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-[#0b0f19] border-b border-slate-800 px-6 py-4 space-y-3 text-sm">
+      <a href="#about" class="block text-slate-300 hover:text-indigo-400 py-1">About Me</a>
+      <a href="#skills" class="block text-slate-300 hover:text-indigo-400 py-1">Skills</a>
+      <a href="#projects" class="block text-slate-300 hover:text-indigo-400 py-1">Projects</a>
+      <a href="#contact" class="block text-slate-300 hover:text-indigo-400 py-1">Contact</a>
+    </div>
+  </header>
+
+  <main class="pt-20">
+    <section id="home" class="py-16 md:py-24 max-w-6xl mx-auto px-5">
+      <div class="grid md:grid-cols-12 gap-10 items-center">
+        
+        <div class="md:col-span-7 space-y-5">
+          
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-950/80 border border-indigo-800/60 text-indigo-300 text-xs font-mono">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            Software Engineering Intern @ Prodigy InfoTech
+          </div>
+
+          <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
+            Hi, I'm Aman. <br>
+            <span class="text-slate-400 font-normal text-2xl sm:text-4xl">I build clean backend software & web solutions.</span>
+          </h1>
+
+          <p class="text-slate-400 text-sm sm:text-base leading-relaxed max-w-xl">
+            I'm a Bachelor of Computer Applications (BCA) student at <strong class="text-slate-200 font-medium">Galgotias University</strong> and an Intern at <strong class="text-slate-200 font-medium">Prodigy InfoTech</strong> with a solid focus on core computer science fundamentals. Mostly working with Java, C++, Python, and software architecture principles.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-3 pt-2">
+            <a href="#projects" class="px-5 py-2.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold transition-all shadow-md flex items-center gap-2">
+              <i class="fa-solid fa-code"></i> View Projects
+            </a>
+            <a href="https://github.com/AmanChand-leo" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 text-xs font-semibold transition-all flex items-center gap-2">
+              <i class="fa-brands fa-github"></i> GitHub Profile
+            </a>
+          </div>
+
+          <div class="pt-4 flex items-center gap-6 text-xs text-slate-500">
+            <span><i class="fa-solid fa-briefcase text-indigo-400 mr-1.5"></i> Prodigy InfoTech</span>
+            <span><i class="fa-solid fa-graduation-cap text-indigo-400 mr-1.5"></i> Galgotias University</span>
+          </div>
+
+        </div>
+        <div class="md:col-span-5 flex justify-center">
+          <div class="w-full max-w-sm bg-slate-900/90 border border-slate-800 rounded-2xl p-6 shadow-xl relative overflow-hidden">
+            <div class="absolute -top-12 -right-12 w-32 h-32 bg-indigo-600/10 rounded-full blur-2xl"></div>
+
+            <div class="flex items-center gap-4 border-b border-slate-800/80 pb-5 mb-5">
+              <div class="w-16 h-16 rounded-xl bg-gradient-to-tr from-indigo-600 to-indigo-800 flex items-center justify-center text-white text-2xl font-bold shadow-lg">
+                AC
+              </div>
+              <div>
+                <h2 class="text-lg font-bold text-white">Aman Chand</h2>
+                <p class="text-xs text-indigo-400 font-mono">Intern @ Prodigy InfoTech</p>
+                <p class="text-[11px] text-slate-500 mt-0.5">Galgotias University &bull; BCA Student</p>
+              </div>
+            </div>
+
+            <div class="space-y-2.5 text-xs">
+              <div class="flex justify-between text-slate-400">
+                <span>Current Role</span>
+                <span class="text-slate-200 font-medium">Software Intern</span>
+              </div>
+              <div class="flex justify-between text-slate-400">
+                <span>Organization</span>
+                <span class="text-slate-200 font-medium">Prodigy InfoTech</span>
+              </div>
+              <div class="flex justify-between text-slate-400">
+                <span>Primary Languages</span>
+                <span class="text-slate-200 font-medium">Java, C++, Python</span>
+              </div>
+            </div>
+
+            <div class="mt-5 pt-4 border-t border-slate-800/80 flex items-center justify-between text-[11px] font-mono text-slate-500">
+              <span>Status</span>
+              <span class="text-emerald-400 flex items-center gap-1">
+                <i class="fa-solid fa-circle-check"></i> Active Intern
+              </span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="about" class="py-20 max-w-6xl mx-auto px-5 border-t border-slate-800/80">
+      <div class="grid md:grid-cols-12 gap-12">
+
+        <div class="md:col-span-6 space-y-5">
+          <span class="text-indigo-400 font-mono text-xs font-semibold uppercase tracking-wider block">Background</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white">About Me & How I Code</h2>
+          
+          <p class="text-slate-300 text-sm leading-relaxed">
+            I am currently pursuing my <strong>Bachelor of Computer Applications (BCA)</strong> at <strong>Galgotias University</strong> while gaining practical hands-on experience as a Software Engineering Intern at <strong>Prodigy InfoTech</strong>.
+          </p>
+
+          <p class="text-slate-400 text-sm leading-relaxed">
+            I focus on building a strong foundation in core computer science, software architecture, and problem-solving. Whether writing C++ for Data Structures, constructing backend logic with Java, or executing software projects during my internship at Prodigy InfoTech, I emphasize clean code and scalable design.
+          </p>
+
+          <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 text-xs text-slate-300 space-y-2">
+            <p class="font-bold text-white"><i class="fa-solid fa-bullseye text-indigo-400 mr-2"></i> Career Objective</p>
+            <p class="text-slate-400">Eager to leverage my internship experience at Prodigy InfoTech and strong technical skills in Java, Python, and C++ to build impactful real-world software solutions and expand my skill set.</p>
+          </div>
+        </div>
+        <div class="md:col-span-6 space-y-6">
+          <span class="text-indigo-400 font-mono text-xs font-semibold uppercase tracking-wider block">Experience & Education</span>
+          
+          <div class="space-y-4">
+
+            <div class="p-5 rounded-xl bg-slate-900 border border-slate-800 card-hover">
+              <div class="flex justify-between items-start">
+                <div>
+                  <h3 class="font-bold text-white text-base">Software Engineering Intern</h3>
+                  <p class="text-xs text-indigo-400 mt-0.5">Prodigy InfoTech</p>
+                </div>
+                <span class="text-[11px] font-mono text-emerald-400 bg-emerald-950/40 px-2 py-1 rounded border border-emerald-900">Active Role</span>
+              </div>
+              <p class="text-xs text-slate-400 mt-3 leading-relaxed">
+                Applying software development concepts, writing structured code, and implementing real-world assignments across web technology and computer science fundamentals.
+              </p>
+            </div>
+            
+            <div class="p-5 rounded-xl bg-slate-900 border border-slate-800 card-hover">
+              <div class="flex justify-between items-start">
+                <div>
+                  <h3 class="font-bold text-white text-base">Bachelor of Computer Applications (BCA)</h3>
+                  <p class="text-xs text-indigo-400 mt-0.5">Galgotias University</p>
+                </div>
+                <span class="text-[11px] font-mono text-slate-500 bg-slate-950 px-2 py-1 rounded">Undergraduate</span>
+              </div>
+              <p class="text-xs text-slate-400 mt-3 leading-relaxed">
+                Actively engaged in coursework and practical coding. Focused on Object-Oriented Programming (OOP), Data Structures & Algorithms (DSA), Software Architecture, and Database Systems.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="skills" class="py-16 bg-slate-900/30 border-t border-slate-800">
+      <div class="max-w-6xl mx-auto px-5">
+        
+        <div class="mb-10">
+          <span class="text-indigo-400 font-mono text-xs font-semibold uppercase tracking-wider block mb-1">Toolbox</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Technical Skills</h2>
+        </div>
+
+        <div class="grid sm:grid-cols-3 gap-5 mb-8">
+          
+          <div class="p-5 rounded-xl bg-slate-900 border border-slate-800">
+            <div class="w-10 h-10 rounded-lg bg-orange-500/10 text-orange-400 flex items-center justify-center text-xl mb-3">
+              <i class="fa-brands fa-java"></i>
+            </div>
+            <h3 class="font-bold text-white text-sm">Java</h3>
+            <p class="text-xs text-slate-400 mt-1 leading-relaxed">
+              OOP concepts, Collections framework, Exception handling, and backend logic.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-xl bg-slate-900 border border-slate-800">
+            <div class="w-10 h-10 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl mb-3">
+              <i class="fa-brands fa-python"></i>
+            </div>
+            <h3 class="font-bold text-white text-sm">Python</h3>
+            <p class="text-xs text-slate-400 mt-1 leading-relaxed">
+              Scripting, automated problem solving, data processing, and rapid prototyping.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-xl bg-slate-900 border border-slate-800">
+            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl mb-3">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3 class="font-bold text-white text-sm">C++</h3>
+            <p class="text-xs text-slate-400 mt-1 leading-relaxed">
+              Pointers, memory concepts, Standard Template Library (STL), and DSA implementations.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="p-6 rounded-xl bg-slate-900 border border-slate-800">
+          <h3 class="text-xs font-mono uppercase text-indigo-400 font-semibold mb-4">Core Concepts & Knowledge Areas</h3>
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="px-3 py-1.5 rounded-lg bg-slate-950 text-slate-300 border border-slate-800">Data Structures & Algorithms</span>
+            <span class="px-3 py-1.5 rounded-lg bg-slate-950 text-slate-300 border border-slate-800">Object-Oriented Programming (OOP)</span>
+            <span class="px-3 py-1.5 rounded-lg bg-slate-950 text-slate-300 border border-slate-800">Software Development Fundamentals</span>
+            <span class="px-3 py-1.5 rounded-lg bg-slate-950 text-slate-300 border border-slate-800">Software Architecture</span>
+            <span class="px-3 py-1.5 rounded-lg bg-slate-950 text-slate-300 border border-slate-800">Backend Development</span>
+            <span class="px-3 py-1.5 rounded-lg bg-slate-950 text-slate-300 border border-slate-800">Git & GitHub</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="projects" class="py-20 max-w-6xl mx-auto px-5">
+      <div class="mb-10">
+        <span class="text-indigo-400 font-mono text-xs font-semibold uppercase tracking-wider block mb-1">Portfolio</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Featured Web Projects</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 card-hover flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-center mb-3">
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-indigo-950 text-indigo-400 border border-indigo-800">Task 01</span>
+              <span class="text-xs text-slate-500">Prodigy InfoTech</span>
+            </div>
+            <h3 class="font-bold text-white text-base">Responsive Landing Page</h3>
+            <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+              Interactive navigation bar with dynamic color-change on scroll, smooth navigation anchors, dynamic menu switching, and clean responsive layout.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs">
+            <a href="https://github.com/AmanChand-leo" target="_blank" rel="noopener noreferrer" class="text-indigo-400 hover:underline">GitHub Code &rarr;</a>
+            <span class="text-slate-500 font-mono">HTML / CSS / JS</span>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 card-hover flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-center mb-3">
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-indigo-950 text-indigo-400 border border-indigo-800">Task 02</span>
+              <span class="text-xs text-slate-500">Prodigy InfoTech</span>
+            </div>
+            <h3 class="font-bold text-white text-base">Stopwatch Web Application</h3>
+            <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+              Interactive timer with precise millisecond tracking, start/pause/reset functions, and lap time recording using Javascript timing functions.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs">
+            <a href="https://github.com/AmanChand-leo" target="_blank" rel="noopener noreferrer" class="text-indigo-400 hover:underline">GitHub Code &rarr;</a>
+            <span class="text-slate-500 font-mono">JS / HTML / CSS</span>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 card-hover flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-center mb-3">
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-indigo-950 text-indigo-400 border border-indigo-800">Task 03</span>
+              <span class="text-xs text-slate-500">Prodigy InfoTech</span>
+            </div>
+            <h3 class="font-bold text-white text-base">Tic-Tac-Toe Web Application</h3>
+            <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+              Web game featuring player turn management, winning condition checking algorithm, draw state detection, and instant board reset.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs">
+            <a href="https://github.com/AmanChand-leo" target="_blank" rel="noopener noreferrer" class="text-indigo-400 hover:underline">GitHub Code &rarr;</a>
+            <span class="text-slate-500 font-mono">JS / DOM Manipulation</span>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 card-hover flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-center mb-3">
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-indigo-950 text-indigo-400 border border-indigo-800">Task 04</span>
+              <span class="text-xs text-slate-500">Prodigy InfoTech</span>
+            </div>
+            <h3 class="font-bold text-white text-base">Personal Portfolio Website</h3>
+            <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+              Modern personal portfolio displaying skills, projects, and bio with responsive design, smooth navigation, and dark UI styling.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs">
+            <a href="https://github.com/AmanChand-leo" target="_blank" rel="noopener noreferrer" class="text-indigo-400 hover:underline">GitHub Code &rarr;</a>
+            <span class="text-slate-500 font-mono">HTML / Tailwind</span>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 card-hover flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-center mb-3">
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-indigo-950 text-indigo-400 border border-indigo-800">Task 05</span>
+              <span class="text-xs text-slate-500">Prodigy InfoTech</span>
+            </div>
+            <h3 class="font-bold text-white text-base">Weather App</h3>
+            <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+              Fetches real-time weather data using OpenWeatherMap REST API, city search functionality, temperature, humidity, and atmospheric metrics.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs">
+            <a href="https://github.com/AmanChand-leo" target="_blank" rel="noopener noreferrer" class="text-indigo-400 hover:underline">GitHub Code &rarr;</a>
+            <span class="text-slate-500 font-mono">Fetch API / Async JS</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-slate-900/40 border-t border-slate-800">
+      <div class="max-w-6xl mx-auto px-5">
+        
+        <div class="grid md:grid-cols-12 gap-10">
+          
+          <div class="md:col-span-5 space-y-4">
+            <span class="text-indigo-400 font-mono text-xs font-semibold uppercase tracking-wider block">Get in Touch</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Let's Connect</h2>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Feel free to reach out for software engineering opportunities, internship discussions, or technical project feedback.
+            </p>
+
+            <div class="space-y-3 pt-2 text-xs">
+              <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800 flex items-center gap-3">
+                <i class="fa-solid fa-envelope text-indigo-400 text-base"></i>
+                <div>
+                  <span class="text-slate-500 block text-[10px]">Email</span>
+                  <a href="mailto:aman10chand@gmail.com" class="text-slate-200 font-medium hover:text-indigo-400">aman10chand@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800 flex items-center gap-3">
+                <i class="fa-brands fa-github text-indigo-400 text-base"></i>
+                <div>
+                  <span class="text-slate-500 block text-[10px]">GitHub Profile</span>
+                  <a href="https://github.com/AmanChand-leo" target="_blank" rel="noopener noreferrer" class="text-slate-200 font-medium hover:text-indigo-400">github.com/AmanChand-leo</a>
+                </div>
+              </div>
+
+              <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800 flex items-center gap-3">
+                <i class="fa-solid fa-building text-indigo-400 text-base"></i>
+                <div>
+                  <span class="text-slate-500 block text-[10px]">Internship</span>
+                  <span class="text-slate-200 font-medium">Prodigy InfoTech</span>
+                </div>
+              </div>
+
+              <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800 flex items-center gap-3">
+                <i class="fa-solid fa-location-dot text-indigo-400 text-base"></i>
+                <div>
+                  <span class="text-slate-500 block text-[10px]">Campus</span>
+                  <span class="text-slate-200 font-medium">Galgotias University, Greater Noida</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:col-span-7">
+            <form onsubmit="handleForm(event)" class="p-6 rounded-xl bg-slate-900 border border-slate-800 space-y-4">
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-mono text-slate-400 mb-1">Your Name</label>
+                  <input type="text" required placeholder="John Doe" class="w-full px-3.5 py-2.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-indigo-500 text-xs">
+                </div>
+                <div>
+                  <label class="block text-xs font-mono text-slate-400 mb-1">Your Email</label>
+                  <input type="email" required placeholder="john@example.com" class="w-full px-3.5 py-2.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-indigo-500 text-xs">
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-mono text-slate-400 mb-1">Message</label>
+                <textarea rows="4" required placeholder="Write your message here..." class="w-full px-3.5 py-2.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-indigo-500 text-xs custom-scrollbar"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-2.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition-all">
+                Send Message
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+  <footer class="bg-[#0b0f19] border-t border-slate-900 py-8 text-xs text-slate-500 text-center sm:text-left">
+    <div class="max-w-6xl mx-auto px-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p>&copy; Aman Chand &bull; Galgotias University (BCA)</p>
+      <p class="font-mono text-[11px] text-slate-600">Intern @ Prodigy InfoTech</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="fixed bottom-5 right-5 z-50 transform translate-y-16 opacity-0 transition-all duration-300">
+    <div class="px-4 py-2.5 rounded-lg bg-slate-900 border border-indigo-500 text-white text-xs shadow-xl flex items-center gap-2">
+      <i class="fa-solid fa-check text-emerald-400"></i>
+      <span id="toastText">Message sent!</span>
+    </div>
+  </div>
+
+  <script>
+    const mobileBtn = document.getElementById('mobileBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+  
+    document.querySelectorAll('#mobileMenu a').forEach(l => l.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+    function handleForm(e) {
+      e.preventDefault();
+      const toast = document.getElementById('toast');
+      toast.classList.remove('translate-y-16', 'opacity-0');
+      setTimeout(() => toast.classList.add('translate-y-16', 'opacity-0'), 3000);
+      e.target.reset();
+    }
+  </script>
+
+</body>
+</html>
